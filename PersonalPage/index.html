@@ -17,6 +17,27 @@
       .nav-link {
         color: var(--bs-gray-900)
       }
+
+      .avatar {
+        border-radius: 50%;
+      }
+
+      .profile-content {
+        background-color: aqua;
+        display: flex !important;
+        align-content:space-between;
+        justify-content: center;
+        padding: 50px;
+      }
+
+      .profile-infor {
+        margin: 30px;
+        padding: 50px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+      }
+    
     </style>
 </head>
 <body>
@@ -30,7 +51,26 @@
         </ul>
       </header>
     </div>
-
+    <hr>
+    <section>
+      <div class="profile-content">
+        <img class="avatar bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" src="./assets/puppy.png" width="400px" height="500px"/>
+        <div class="profile-infor">
+          <h1 class="infor">Phan Ngoc Trieu</h1>
+          <p class="infor"> <b>Email: </b>phantrieu580@gmail.com </p>
+          <p class="infor"> <b>Number: </b>+84 974 210 249 </p>
+        </div>
+      </div>
+      <!-- <div class="row featurette m-lg-5 float-start">
+        <div class="col-md-5 order-md-1 float-end">
+          <img class="rounded-circle" src="./assets/puppy.png" width="500px" height="500px" />
+        </div>
+        <div class="col-md-7 order-md-2 float-start">
+          <h2 class="featurette-heading fw-normal lh-1">Oh yeah, it’s that good. <span class="text-body-secondary">See for yourself.</span></h2>
+          <p class="lead">Another featurette? Of course. More placeholder content here to give you an idea of how this layout would work with some actual real-world content in place.</p>
+        </div>
+      </div> -->
+    </section>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
 </body>
 </html>
