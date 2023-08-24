@@ -23,21 +23,42 @@
       }
 
       .profile-content {
-        background-color: aqua;
-        display: flex !important;
+        display: flex;
         align-content:space-between;
         justify-content: center;
         padding: 50px;
+        height: 50vh;
+        width: 100%;
       }
 
       .profile-infor {
         margin: 30px;
-        padding: 50px;
+        padding: 30px;
         display: flex;
         flex-direction: column;
-        flex-wrap: wrap;
+        flex-wrap: nowrap;
+        gap: 40px;
       }
-    
+
+      .infor {
+        display: block;
+        font-family:sans-serif;
+      }
+
+      .personal-name {
+        font-size: 70px;
+      }
+      
+      @media (max-width: 1020px) {
+        .profile-content {
+          flex-wrap: wrap;
+        }
+        .profile-infor {
+          margin: 10px;
+          gap: 10px;
+          align-items: center;
+        }
+      }
     </style>
 </head>
 <body>
@@ -53,12 +74,12 @@
     </div>
     <hr>
     <section>
-      <div class="profile-content">
-        <img class="avatar bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" src="./assets/puppy.png" width="400px" height="500px"/>
-        <div class="profile-infor">
-          <h1 class="infor">Phan Ngoc Trieu</h1>
-          <p class="infor"> <b>Email: </b>phantrieu580@gmail.com </p>
-          <p class="infor"> <b>Number: </b>+84 974 210 249 </p>
+      <div class="profile-content grid">
+        <img class="avatar img-fluid " src="./assets/puppy.png" width="500px" height="500px"/>
+        <div class="profile-infor md">
+          <h1 class="infor text-nowrap personal-name">Phan Ngoc Trieu</h1>
+          <p class="infor text-nowrap email fs-2"> <strong>Email: </strong>phantrieu580@gmail.com </p>
+          <p class="infor text-nowrap number fs-2"> <strong>Number: </strong>+84 974 210 249 </p>
         </div>
       </div>
       <!-- <div class="row featurette m-lg-5 float-start">
