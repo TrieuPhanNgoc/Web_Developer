@@ -1,0 +1,42 @@
+body {
+    /* background-color: aqua; */
+    height: 100vh;
+    /* background-image: linear-gradient( to bottom, #000046, #1CB5E0); */
+    background-image: linear-gradient( to right, #D8B5FF   , #1EAE98);
+}
+
+.header-content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.self-name {
+    /* background-color: aqua; */
+    font-family: 'Lexen Deca', sans-serif;
+    font-size: 50px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.link-references {
+    /* background-color: aliceblue; */
+    /* float: left; */
+    padding-right: 10px;
+}
+
+@media (max-width: 767px) {
+    body {
+        /* background-image: linear-gradient( to bottom, #000046, #1CB5E0); */
+    }
+
+    .header-content {
+        /* justify-items: center; */
+        /* align-items: center; */
+        flex-flow: row wrap;
+        justify-content: center;
+    }
+
+}
